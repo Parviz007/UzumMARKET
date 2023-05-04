@@ -5,17 +5,22 @@ import uz from "./kisspng-flag-of-uzbekistan-flags-of-asia-national-flag-uzbekis
 export default class Navbar extends Component {
   render() {
     return (
-      <Box>
-        <Box sx={{ width: "100%", bgcolor: "#F4F5F5" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "15px",
+          justifyContent: "center",
+        }}
+      >
+        <Box sx={{ bgcolor: "#F4F5F5" }}>
           <Box
             sx={{
               display: "flex",
-              justifyContent: "space-around",
+              justifyContent: "space-between",
               alignItems: "center",
               gap: "10px",
-              padding: " 0 60px",
-            
-              // padding:"0 25px"
+              padding: "0 100px",
             }}
           >
             <Box
@@ -23,8 +28,6 @@ export default class Navbar extends Component {
                 display: "flex",
                 alignItems: "center",
                 gap: "25px",
-
-                // padding: "0 50px",
               }}
             >
               <Typography sx={{ fontSize: "20px", display: "flex" }}>
@@ -62,12 +65,11 @@ export default class Navbar extends Component {
         </Box>
         <Box
           sx={{
-     
-            justifyContent: "center",
+            justifyContent: "space-between",
             alignItems: "center",
             display: "flex",
-            padding: "30px 0",
             gap: "10px",
+            padding: "0 100px",
           }}
         >
           <Box
@@ -84,10 +86,11 @@ export default class Navbar extends Component {
                 bgcolor: "#EAEAF9",
                 border: "0",
                 gap: "15px",
+                fontWeight:"700"
               }}
               variant="outlined"
             >
-              <i style={{ fontSize: "27px" }} class="bx bx-collection"></i>{" "}
+              <i style={{ fontSize: "27px", fontWeight:"500"}} class="bx bx-collection"></i>{" "}
               Каталог
             </Button>
           </Box>
@@ -115,20 +118,26 @@ export default class Navbar extends Component {
               sx={{
                 borderRadius: "5px",
                 bgcolor: "#F8F8F8",
-                padding: "10px 25px ",
+                padding: "10px 35px ",
               }}
             >
               <i style={{ fontSize: "25px" }} class="bx bx-search"></i>
             </Box>
           </Box>
-          <Box sx={{color:"#000"}}>
-            <Button sx={{ padding: "10px" }} variant="#000">
+          <Box sx={{ color: "#000", fontSize: "30px" }}>
+            <Button
+              sx={{ padding: "10px", alignItems: "center" }}
+              variant="#000"
+            >
               {" "}
               <i
                 style={{ padding: "0 10px", fontSize: "25px" }}
                 class="bx bx-user"
               ></i>
-              Войти
+              <Typography sx={{ fontWeight: "600", fontSize: "15px" }}>
+                {" "}
+                Войти
+              </Typography>
             </Button>
             <Button sx={{ padding: "10px" }} variant="#000">
               {" "}
@@ -136,7 +145,10 @@ export default class Navbar extends Component {
                 style={{ padding: "0 10px", fontSize: "25px" }}
                 class="bx bx-heart"
               ></i>
-              Избранное
+              <Typography sx={{ fontWeight: "600", fontSize: "15px" }}>
+                {" "}
+                Избранное
+              </Typography>
             </Button>
             <Button sx={{ padding: "10px" }} variant="#000">
               {" "}
@@ -144,9 +156,187 @@ export default class Navbar extends Component {
                 style={{ padding: "0 10px", fontSize: "25px" }}
                 class="bx bx-shopping-bag"
               ></i>
-              Корзина
+              <Typography sx={{ fontWeight: "600", fontSize: "15px" }}>
+                {" "}
+                Корзина
+              </Typography>
             </Button>
           </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            padding: "15px 100px",
+          }}
+        >
+          <Typography
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
+              },
+            ]}
+          >
+            Электроника
+          </Typography>
+          <Typography
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
+              },
+            ]}
+          >
+            Бытовая техтика
+          </Typography>
+          <Typography
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
+              },
+            ]}
+          >
+            Одежда
+          </Typography>
+          <Typography
+         sx={[
+          { color: "#8E8E8E", fontSize: "18.5px" },
+          {
+            "&:hover": {
+              color: "#000",
+              borderBottom: "solid #000 3px",
+              animation: "3s linear 5s infinite running slidein;",
+            },
+          },
+        ]}
+          >
+            Обувь
+          </Typography>
+          <Typography
+          sx={[
+            { color: "#8E8E8E", fontSize: "18.5px" },
+            {
+              "&:hover": {
+                color: "#000",
+                borderBottom: "solid #000 3px",
+                animation: "3s linear 5s infinite running slidein;",
+              },
+            },
+          ]}
+          >
+            Аксесуары
+          </Typography>
+          <Typography
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
+              },
+            ]}
+          >
+            Красота
+          </Typography>
+          <Typography
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
+              },
+            ]}
+          >
+            Здоровье
+          </Typography>
+          <Typography
+           sx={[
+            { color: "#8E8E8E", fontSize: "18.5px" },
+            {
+              "&:hover": {
+                color: "#000",
+                borderBottom: "solid #000 3px",
+                animation: "3s linear 5s infinite running slidein;",
+              },
+            },
+          ]}
+          >
+            Товары дла дома
+          </Typography>
+          <Typography
+          sx={[
+            { color: "#8E8E8E", fontSize: "18.5px" },
+            {
+              "&:hover": {
+                color: "#000",
+                borderBottom: "solid #000 3px",
+                animation: "3s linear 5s infinite running slidein;",
+              },
+            },
+          ]}
+          >
+            Строитилство и ремонт
+          </Typography>
+          <Typography
+           sx={[
+            { color: "#8E8E8E", fontSize: "18.5px" },
+            {
+              "&:hover": {
+                color: "#000",
+                borderBottom: "solid #000 3px",
+                animation: "3s linear 5s infinite running slidein;",
+              },
+            },
+          ]}
+          >
+            Автотовары{" "}
+          </Typography>
+          <Typography
+             sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
+              },
+            ]}
+          >
+            Детские товары
+          </Typography>
+          <Typography
+           sx={[
+            { color: "#8E8E8E", fontSize: "18.5px" },
+            {
+              "&:hover": {
+                color: "#000",
+              
+              },
+            },
+          ]} 
+          >
+            Ещё
+          </Typography>
         </Box>
       </Box>
     );
