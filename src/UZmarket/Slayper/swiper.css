@@ -37,12 +37,12 @@
   }
 
   .swiper-button-next{
-    margin-right: 180px;
+    margin-right: 100px;
     color: #454545;
     border-radius: 50%;
     margin-top: 5px;
     background-color: #cccccc8b;
-    padding: 30px 30px;
+    padding: 20px 20px;
     
   }
 
@@ -53,10 +53,10 @@
     /* border:1px solid rgba(118,121,127,0.3);
     background: #A2A2A2; */
     border-radius: 50%;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-top: 5px;
     z-index: 100;
     background-color: #cccccc8b;
-    padding: 30px 30px;
+    padding: 20px 20px;
     
   }

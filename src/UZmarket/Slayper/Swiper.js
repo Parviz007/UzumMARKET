@@ -1,18 +1,11 @@
 import { Box } from "@mui/material";
-
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// import a from "./fooo.webp";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
 import "./swiper.css";
 
 import { Navigation } from "swiper";
-
 export const Swipe = ({ SSwipe }) => {
   return (
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
@@ -25,21 +18,24 @@ export const Swipe = ({ SSwipe }) => {
             flexDirection={"column"}
           >
             <Box
-              width={"82%"}
+              width={"90%"}
               display={"flex"}
-              justifyContent={"flex-start"}
+              justifyContent={"center"}
               alignItems={"center"}
               mt="20px"
             >
               <Box
-                width={"1500px"}
+                width={"100vw"}
                 overflow={"hidden"}
-                borderRadius={"10px"}
+                borderRadius={"20px"}
                 bgcolor={"red"}
-                mr={"30px"}
               >
                 {/* {console.log(item.SwImg)} */}
-                <img src={item.SwImg} alt="" style={{ width: "100%", height: "100%" }} />
+                <img
+                  src={item.SwImg}
+                  alt=""
+                  style={{ width: "100%", height: "100%" }}
+                />
               </Box>
             </Box>
           </Box>
