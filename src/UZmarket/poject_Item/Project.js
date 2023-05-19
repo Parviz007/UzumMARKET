@@ -2,6 +2,18 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 
 export default function Project({ Product }) {
+  let itemLocal = (item) => {
+    if (localStorage.getItem("korzinaProduct")) {
+      let a = JSON.parse(localStorage.getItem("korzinaProduct"));
+      a.push(item);
+      localStorage.setItem("korzinaProduct", JSON.stringify(a));
+    } else {
+      localStorage.setItem("korzinaProduct", JSON.stringify([]));
+      let b = JSON.parse(localStorage.getItem("korzinaProduct"));
+      b.push(item);
+      localStorage.setItem("korzinaProduct", JSON.stringify(b));
+    }
+  };
   return (
     <Box width={"90%"} margin={"0 auto"} sx={{ animation: "5s 0s " }}>
       <Box>
@@ -11,24 +23,49 @@ export default function Project({ Product }) {
             fontSize: "30px",
             fontWeight: "600",
             alignItems: "center",
-            padding: "50px 0",
-            border: "solid yellow",
+            padding: "30px 0 20px 0",
           }}
         >
           Скидки <i class="bx bx-chevron-right"></i>
         </Typography>
-        <Box sx={{ border: "solid red", display: "flex", gap: "15px" }}>
+        <Box
+          sx={{
+            display: "flex",
+            gap: "15px",
+            overflow: "hidden",
+          }}
+        >
           {Product.map((item, index) => (
             <Box
               key={index}
-              sx={{
-                width: "300px",
-                display: "felx",
-                flexDirection: "column",
-                gap: "20px",
-              }}
+              sx={[
+                {
+                  width: "300px",
+                  display: "felx",
+                  flexDirection: "column",
+                  gap: "20px",
+                  position: "relative",
+                },
+                {
+                  "&:hover": {
+                 
+                  },
+                },
+              ]}
             >
-              <Box sx={{ display: "flex", animation: "5s  " }}>
+              <Box
+                sx={[
+                  { display: "flex", overflow: "hidden" },
+                  {
+                    "&:hover": {
+                      scale: "1.02",
+                      transition: "0.65s all",
+                      overflow: "hidden",
+                      borderRadius: "15px",
+                    },
+                  },
+                ]}
+              >
                 <img
                   style={{ width: "100%", borderRadius: "10px" }}
                   src={item.defImg}
@@ -55,29 +92,74 @@ export default function Project({ Product }) {
                     bgcolor: "yellow",
                     width: "115px",
                     textAlign: "center",
-                    borderRadius: "5px",
+                    borderRadius: "15px",
                     fontSize: "14px",
                   }}
                 >
                   3 600 сум/мес
                 </Typography>
-                <Typography fontWeight={"700"} padding={"20px 0"}>
-                  {item.newPrice}
-                </Typography>
+                <Box sx={{ padding: "10px 0" }}>
+                  <Typography
+                    style={{
+                      fontSize: "15px",
+                      color: "#A2A2A4",
+                      borderBottom: "1px solid #ccc",
+                      height: "10px",
+                      width: "70px",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    {item.oldPrise}сум
+                  </Typography>
+                  <Typography style={{ fontSize: "18px", color: "#000" }}>
+                    {item.newPrise}сум
+                  </Typography>
+                </Box>
+
+                <Box>
+                  <Box
+                    sx={[
+                      {
+                        position: "absolute",
+                        top: "15px",
+                        right: "15px",
+                      },
+                    ]}
+                  >
+                    <i
+                      style={{
+                        fontSize: "25px",
+                        fontWeight: "100",
+                        color: "#A2A2A4",
+                      }}
+                      class="bx bx-heart"
+                    ></i>
+                  </Box>
+                  <Box
+                    sx={{ position: "absolute", bottom: "25px", right: "15px" }}
+                  >
+                    <i
+                      onClick={itemLocal(item)}
+                      style={{
+                        fontSize: "25px",
+                        fontWeight: "100",
+                        color: "#A2A2A4",
+                      }}
+                      class="bx bx-shopping-bag"
+                    ></i>
+                  </Box>
+                </Box>
               </Box>
             </Box>
           ))}
         </Box>
       </Box>
-      <Box>
-        <Box>
-          <i
-            style={{ fontSize: "25px", fontWeight: "100" }}
-            class="bx bx-heart"
-          ></i>
+      {/* <Box>
+        <Box sx={{ position: "absolute", left: "10px" }}>
+          
         </Box>
         <Box></Box>
-      </Box>
+      </Box> */}
     </Box>
   );
 }
