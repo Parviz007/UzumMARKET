@@ -31,8 +31,10 @@ export default function Project({ Product }) {
         <Box
           sx={{
             display: "flex",
-            gap: "15px",
+            gap: "25px",
             overflow: "hidden",
+            border: "solid red",
+            flexWrap:"wrap"
           }}
         >
           {Product.map((item, index) => (
@@ -47,9 +49,7 @@ export default function Project({ Product }) {
                   position: "relative",
                 },
                 {
-                  "&:hover": {
-                 
-                  },
+                  "&:hover": {},
                 },
               ]}
             >

@@ -1,4 +1,4 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Link } from "@mui/material";
 import React, { Component } from "react";
 import uzumFoto from "./uzum_market.svg";
 import uz from "./kisspng-flag-of-uzbekistan-flags-of-asia-national-flag-uzbekistan-state-university-of-world-languages-s-5d240565227364.2389355915626417651411.jpg";
@@ -86,11 +86,14 @@ export default class Navbar extends Component {
                 bgcolor: "#EAEAF9",
                 border: "0",
                 gap: "15px",
-                fontWeight:"700"
+                fontWeight: "700",
               }}
               variant="outlined"
             >
-              <i style={{ fontSize: "27px", fontWeight:"500"}} class="bx bx-collection"></i>{" "}
+              <i
+                style={{ fontSize: "27px", fontWeight: "500" }}
+                class="bx bx-collection"
+              ></i>{" "}
               Каталог
             </Button>
           </Box>
@@ -150,17 +153,19 @@ export default class Navbar extends Component {
                 Избранное
               </Typography>
             </Button>
-            <Button sx={{ padding: "10px" }} variant="#000">
-              {" "}
-              <i
-                style={{ padding: "0 10px", fontSize: "25px" }}
-                class="bx bx-shopping-bag"
-              ></i>
-              <Typography sx={{ fontWeight: "600", fontSize: "15px" }}>
+            <Link to="/Karzina">
+              <Button sx={{ padding: "10px" }} variant="#000">
                 {" "}
-                Корзина
-              </Typography>
-            </Button>
+                <i
+                  style={{ padding: "0 10px", fontSize: "25px" }}
+                  class="bx bx-shopping-bag"
+                ></i>
+                <Typography sx={{ fontWeight: "600", fontSize: "15px" }}>
+                  {" "}
+                  Корзина
+                </Typography>
+              </Button>
+            </Link>
           </Box>
         </Box>
         <Box
@@ -213,30 +218,30 @@ export default class Navbar extends Component {
             Одежда
           </Typography>
           <Typography
-         sx={[
-          { color: "#8E8E8E", fontSize: "18.5px" },
-          {
-            "&:hover": {
-              color: "#000",
-              borderBottom: "solid #000 3px",
-              animation: "3s linear 5s infinite running slidein;",
-            },
-          },
-        ]}
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
+              },
+            ]}
           >
             Обувь
           </Typography>
           <Typography
-          sx={[
-            { color: "#8E8E8E", fontSize: "18.5px" },
-            {
-              "&:hover": {
-                color: "#000",
-                borderBottom: "solid #000 3px",
-                animation: "3s linear 5s infinite running slidein;",
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
               },
-            },
-          ]}
+            ]}
           >
             Аксесуары
           </Typography>
@@ -269,49 +274,49 @@ export default class Navbar extends Component {
             Здоровье
           </Typography>
           <Typography
-           sx={[
-            { color: "#8E8E8E", fontSize: "18.5px" },
-            {
-              "&:hover": {
-                color: "#000",
-                borderBottom: "solid #000 3px",
-                animation: "3s linear 5s infinite running slidein;",
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
               },
-            },
-          ]}
+            ]}
           >
             Товары дла дома
           </Typography>
           <Typography
-          sx={[
-            { color: "#8E8E8E", fontSize: "18.5px" },
-            {
-              "&:hover": {
-                color: "#000",
-                borderBottom: "solid #000 3px",
-                animation: "3s linear 5s infinite running slidein;",
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
               },
-            },
-          ]}
+            ]}
           >
             Строитилство и ремонт
           </Typography>
           <Typography
-           sx={[
-            { color: "#8E8E8E", fontSize: "18.5px" },
-            {
-              "&:hover": {
-                color: "#000",
-                borderBottom: "solid #000 3px",
-                animation: "3s linear 5s infinite running slidein;",
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                  borderBottom: "solid #000 3px",
+                  animation: "3s linear 5s infinite running slidein;",
+                },
               },
-            },
-          ]}
+            ]}
           >
             Автотовары{" "}
           </Typography>
           <Typography
-             sx={[
+            sx={[
               { color: "#8E8E8E", fontSize: "18.5px" },
               {
                 "&:hover": {
@@ -325,15 +330,14 @@ export default class Navbar extends Component {
             Детские товары
           </Typography>
           <Typography
-           sx={[
-            { color: "#8E8E8E", fontSize: "18.5px" },
-            {
-              "&:hover": {
-                color: "#000",
-              
+            sx={[
+              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                "&:hover": {
+                  color: "#000",
+                },
               },
-            },
-          ]} 
+            ]}
           >
             Ещё
           </Typography>
