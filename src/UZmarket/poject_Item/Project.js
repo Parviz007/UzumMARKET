@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import React from "react";
 
 export default function Project({ Product }) {
@@ -32,9 +32,10 @@ export default function Project({ Product }) {
           sx={{
             display: "flex",
             gap: "25px",
+            justifyContent: "center",
             overflow: "hidden",
             border: "solid red",
-            flexWrap:"wrap"
+            flexWrap: "wrap",
           }}
         >
           {Product.map((item, index) => (
@@ -44,6 +45,7 @@ export default function Project({ Product }) {
                 {
                   width: "300px",
                   display: "felx",
+                  maxWidth: "300px",
                   flexDirection: "column",
                   gap: "20px",
                   position: "relative",
@@ -103,7 +105,7 @@ export default function Project({ Product }) {
                     style={{
                       fontSize: "15px",
                       color: "#A2A2A4",
-                      borderBottom: "1px solid #ccc",
+                      borderBottom: "1px solid #000",
                       height: "10px",
                       width: "70px",
                       marginBottom: "10px",
@@ -153,13 +155,22 @@ export default function Project({ Product }) {
             </Box>
           ))}
         </Box>
-      </Box>
-      {/* <Box>
-        <Box sx={{ position: "absolute", left: "10px" }}>
-          
+        <Box style={{ position: "absolute", button: "50px", left: "25%" }}>
+          <button
+            style={{
+              width: "850px",
+              height: "70px",
+              border: "solid 0px",
+              borderRadius: "10px",
+              margin: "50px 0",
+              fontSize:"20px",
+              fontWeight:"6500"
+            }}
+          >
+            Паказат ещё 20
+          </button>
         </Box>
-        <Box></Box>
-      </Box> */}
+      </Box>
     </Box>
   );
 }

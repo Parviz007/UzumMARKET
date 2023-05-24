@@ -9,7 +9,13 @@ import foto2 from "./UZmarket/Slayper/uzumFoto2.jpg";
 import foto3 from "./UZmarket/Slayper/uzumFoto3.jpg";
 import foto4 from "./UZmarket/Slayper/foto .jpg";
 import foto5 from "./UZmarket/Slayper/foto2.jpg";
-import fotoproduct from "./UZmarket/poject_Item/foto_Tide.jpg"
+import fotoproduct from "./UZmarket/poject_Item/foto_Tide.jpg";
+import fotoVintelator from "./UZmarket/poject_Item/vintelator.jpg";
+import fotorugan from "./UZmarket/poject_Item/rugan.jpg";
+import fotodeg from "./UZmarket/poject_Item/deg.jpg";
+import fotord from "./UZmarket/poject_Item/ord.jpg";
+import fotolosk from "./UZmarket/poject_Item/losk.jpg";
+import NarvarButon from "./UZmarket/NavbarButon/NarvarButon";
 function App() {
   function Swiper(Id, SwImg) {
     return {
@@ -58,72 +64,284 @@ function App() {
   let Product = [
     project_item(
       1,
+      "вентелвтор",
+      "Вентелатор напольый Grand 2 в 1 с 3 лопастям",
+      fotoVintelator,
+      "6.0(65 оценок)",
+      99000,
+      89000,
+      fotoVintelator,
+      fotoVintelator,
+      fotoVintelator,
+      fotoVintelator,
+      "6 ta qoldi"
+    ),
+    project_item(
+      2,
+      "Rugan",
+      "a",
+      fotorugan,
+      "6.0(65 оценок)",
+      99000,
+      89000,
+      fotorugan,
+      fotorugan,
+      fotorugan,
+      fotorugan,
+      "47 ta qoldi"
+    ),
+    project_item(
+      3,
       "Tide",
       "Parashok",
-      fotoproduct,
+      fotodeg,
       "6.0(65 baho)",
       99000,
       89000,
-      fotoproduct,
-      fotoproduct,
-      fotoproduct,
-      fotoproduct,
+      fotodeg,
+      fotodeg,
+      fotodeg,
+      fotodeg,
       "2 ta qoldi"
     ),
     project_item(
-      1,
+      4,
       "Tide",
       "Parashok",
-      fotoproduct,
+      fotord,
       "6.0(65 baho)",
       99000,
       89000,
-      fotoproduct,
-      fotoproduct,
-      fotoproduct,
-      fotoproduct,
+      fotord,
+      fotord,
+      fotord,
+      fotord,
+      "2 ta qoldi"
+    ),
+
+    project_item(
+      5,
+      "Tide",
+      "Parashok",
+      fotolosk,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
       "2 ta qoldi"
     ),
     project_item(
-      1,
+      6,
       "Tide",
       "Parashok",
-      fotoproduct,
+      fotolosk,
       "6.0(65 baho)",
       99000,
       89000,
-      fotoproduct,
-      fotoproduct,
-      fotoproduct,
-      fotoproduct,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
       "2 ta qoldi"
     ),
     project_item(
-      1,
+      7,
       "Tide",
       "Parashok",
-      fotoproduct,
+      fotolosk,
       "6.0(65 baho)",
       99000,
       89000,
-      fotoproduct,
-      fotoproduct,
-      fotoproduct,
-      fotoproduct,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
       "2 ta qoldi"
     ),
     project_item(
-      1,
+      8,
       "Tide",
       "Parashok",
-      fotoproduct,
+      fotolosk,
       "6.0(65 baho)",
       99000,
       89000,
-      fotoproduct,
-      fotoproduct,
-      fotoproduct,
-      fotoproduct,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      "2 ta qoldi"
+    ),
+    project_item(
+      9,
+      "Tide",
+      "Parashok",
+      fotolosk,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      "2 ta qoldi"
+    ),
+    project_item(
+      10,
+      "Tide",
+      "Parashok",
+      fotolosk,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      "2 ta qoldi"
+    ),
+    project_item(
+      11,
+      "вентелвтор",
+      "Вентелатор напольый Grand 2 в 1 с 3 лопастям",
+      fotoVintelator,
+      "6.0(65 оценок)",
+      99000,
+      89000,
+      fotoVintelator,
+      fotoVintelator,
+      fotoVintelator,
+      fotoVintelator,
+      "6 ta qoldi"
+    ),
+    project_item(
+      12,
+      "Rugan",
+      "a",
+      fotorugan,
+      "6.0(65 оценок)",
+      99000,
+      89000,
+      fotorugan,
+      fotorugan,
+      fotorugan,
+      fotorugan,
+      "47 ta qoldi"
+    ),
+    project_item(
+      13,
+      "Tide",
+      "Parashok",
+      fotodeg,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotodeg,
+      fotodeg,
+      fotodeg,
+      fotodeg,
+      "2 ta qoldi"
+    ),
+    project_item(
+      14,
+      "Tide",
+      "Parashok",
+      fotord,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotord,
+      fotord,
+      fotord,
+      fotord,
+      "2 ta qoldi"
+    ),
+
+    project_item(
+      15,
+      "Tide",
+      "Parashok",
+      fotolosk,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      "2 ta qoldi"
+    ),
+    project_item(
+      16,
+      "Tide",
+      "Parashok",
+      fotolosk,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      "2 ta qoldi"
+    ),
+    project_item(
+      17,
+      "Tide",
+      "Parashok",
+      fotolosk,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      "2 ta qoldi"
+    ),
+    project_item(
+      18,
+      "Tide",
+      "Parashok",
+      fotolosk,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      "2 ta qoldi"
+    ),
+    project_item(
+      19,
+      "Tide",
+      "Parashok",
+      fotolosk,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      "2 ta qoldi"
+    ),
+    project_item(
+      20,
+      "Tide",
+      "Parashok",
+      fotolosk,
+      "6.0(65 baho)",
+      99000,
+      89000,
+      fotolosk,
+      fotolosk,
+      fotolosk,
+      fotolosk,
       "2 ta qoldi"
     ),
   ];
@@ -135,6 +353,10 @@ function App() {
       </Box>
 
       <UzumMarket SSwipe={SSwipe} Product={Product} />
+
+      <Box>
+        <NarvarButon />
+      </Box>
     </Box>
   );
 }
