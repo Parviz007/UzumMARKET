@@ -34,7 +34,7 @@ export default function Project({ Product }) {
             gap: "25px",
             justifyContent: "center",
             overflow: "hidden",
-            border: "solid red",
+        
             flexWrap: "wrap",
           }}
         >

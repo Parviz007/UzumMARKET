@@ -153,7 +153,7 @@ export default class Navbar extends Component {
                 Избранное
               </Typography>
             </Button>
-            <Link to="/Karzina">
+            <Link to="/karzina">
               <Button sx={{ padding: "10px" }} variant="#000">
                 {" "}
                 <i
@@ -177,12 +177,15 @@ export default class Navbar extends Component {
         >
           <Typography
             sx={[
-              { color: "#8E8E8E", fontSize: "18.5px" },
+              {
+                color: "#8E8E8E",
+                fontSize: "18.5px",
+
+              },
               {
                 "&:hover": {
+                  borderBottom:"solid 3px",
                   color: "#000",
-                  borderBottom: "solid #000 3px",
-                  animation: "3s linear 5s infinite running slidein;",
                 },
               },
             ]}
