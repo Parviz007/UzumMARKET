@@ -4,9 +4,9 @@ export default function Karzina() {
   return (
     <div>
       <Box>
-        <Box sx={{width:"100%", display: "flex" }}>
-          <Typography>Ваша корзина</Typography>
-          <Typography>1 товар</Typography>
+        <Box sx={{ width: "100px", height:"200px", display: "flex", bgcolor: "red" }}>
+          <Typography>Ваша корзиaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaна</Typography>
+          <Typography>1 товарaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Typography>
         </Box>
       </Box>
     </div>

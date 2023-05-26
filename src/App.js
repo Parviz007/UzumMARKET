@@ -16,8 +16,10 @@ import fotodeg from "./UZmarket/poject_Item/deg.jpg";
 import fotord from "./UZmarket/poject_Item/ord.jpg";
 import fotolosk from "./UZmarket/poject_Item/losk.jpg";
 import NarvarButon from "./UZmarket/NavbarButon/NarvarButon";
-import { Route, Routes } from "react-router";
+import { Route, Routes } from "react-router-dom";
 import Karzina from "./UZmarket/Karzina/Karzina";
+
+
 function App() {
   function Swiper(Id, SwImg) {
     return {
@@ -353,13 +355,16 @@ function App() {
       <Box>
         <Navbar />
       </Box>
+
       <UzumMarket SSwipe={SSwipe} Product={Product} />
+
+      <Routes>
+        <Route path="/karzina" element={<Karzina />} />
+      </Routes>
+
       <Box>
         <NarvarButon />
       </Box>
-      <Routes>
-        <Route path="/karzina" element={<Karzina />}/>
-      </Routes>
     </Box>
   );
 }

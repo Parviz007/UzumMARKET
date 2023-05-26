@@ -164,7 +164,8 @@ export default function Project({ Product }) {
               borderRadius: "10px",
               margin: "50px 0",
               fontSize:"20px",
-              fontWeight:"6500"
+              fontWeight:"6500",
+              
             }}
           >
             Паказат ещё 20

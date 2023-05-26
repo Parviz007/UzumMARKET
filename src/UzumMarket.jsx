@@ -9,5 +9,6 @@ export const UzumMarket = ({ SSwipe,Product }) => {
       <Swipe SSwipe={SSwipe} />
       <Project Product={Product}/>
     </Box>
+    
   );
 };

@@ -23,7 +23,7 @@ export default function NarvarButon() {
           borderBottom: "solid #F0F0F0 2px",
           justifyContent: "center",
           alignItems: "center",
-          textAlign:"start"
+          textAlign: "start",
         }}
       >
         <Box sx={{ display: "flex", flexDirection: "column", gap: "15px" }}>
@@ -82,7 +82,7 @@ export default function NarvarButon() {
           </Box>
           <Box sx={{}}>
             <Typography>Uzum в соцсетях</Typography>
-            <Box sx={{display:"flex",gap:"10px"}}>
+            <Box sx={{ display: "flex", gap: "10px" }}>
               <img style={{ width: "70px" }} src={instogram} alt="" />
               <img style={{ width: "35px" }} src={telegram} alt="" />
               <img style={{ width: "48px" }} src={youtube} alt="" />
@@ -91,13 +91,20 @@ export default function NarvarButon() {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ width: "90%", display: "flex",justifyContent:"space-between", padding:"15px"}}>
-        <Box sx={{ display: "flex",gap:"25px"}}>
+      <Box
+        sx={{
+          width: "90%",
+          display: "flex",
+          justifyContent: "space-between",
+          padding: "15px",
+        }}
+      >
+        <Box sx={{ display: "flex", gap: "25px" }}>
           <Typography>Соглашение о конфиденциальности</Typography>
           <Typography>Пользовательское соглашение</Typography>
         </Box>
         <Box>
-          <Typography sx={{ color: "#6E7F80",}}>
+          <Typography sx={{ color: "#6E7F80" }}>
             «2023© ИП ООО «UZUM MARKET». ИНН 309376127. Все права защищены»
           </Typography>
         </Box>

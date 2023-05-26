@@ -1,7 +1,8 @@
-import { Box, Typography, Button, Link } from "@mui/material";
+import { Box, Typography, Button,  } from "@mui/material";
 import React, { Component } from "react";
 import uzumFoto from "./uzum_market.svg";
 import uz from "./kisspng-flag-of-uzbekistan-flags-of-asia-national-flag-uzbekistan-state-university-of-world-languages-s-5d240565227364.2389355915626417651411.jpg";
+import { Link } from "react-router-dom";
 export default class Navbar extends Component {
   render() {
     return (
@@ -79,7 +80,10 @@ export default class Navbar extends Component {
               gap: "45px",
             }}
           >
+            <Link to="/">
             <img width={"250px"} src={uzumFoto} alt="" />
+            </Link>
+            
             <Button
               sx={{
                 padding: "10px 25px",
@@ -180,11 +184,10 @@ export default class Navbar extends Component {
               {
                 color: "#8E8E8E",
                 fontSize: "18.5px",
-
               },
               {
                 "&:hover": {
-                  borderBottom:"solid 3px",
+                  borderBottom: "solid 3px",
                   color: "#000",
                 },
               },
