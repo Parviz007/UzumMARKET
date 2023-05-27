@@ -19,7 +19,6 @@ import NarvarButon from "./UZmarket/NavbarButon/NarvarButon";
 import { Route, Routes } from "react-router-dom";
 import Karzina from "./UZmarket/Karzina/Karzina";
 
-
 function App() {
   function Swiper(Id, SwImg) {
     return {
@@ -356,9 +355,13 @@ function App() {
         <Navbar />
       </Box>
 
-      <UzumMarket SSwipe={SSwipe} Product={Product} />
+      {/* <UzumMarket SSwipe={SSwipe} Product={Product} /> */}
 
       <Routes>
+        <Route
+          path="/"
+          element={<UzumMarket SSwipe={SSwipe} Product={Product} />}
+        />
         <Route path="/karzina" element={<Karzina />} />
       </Routes>
 

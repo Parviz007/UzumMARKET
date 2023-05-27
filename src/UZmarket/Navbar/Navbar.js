@@ -80,7 +80,7 @@ export default class Navbar extends Component {
               gap: "45px",
             }}
           >
-            <Link to="/">
+            <Link to="/" >
             <img width={"250px"} src={uzumFoto} alt="" />
             </Link>
             
@@ -157,7 +157,7 @@ export default class Navbar extends Component {
                 Избранное
               </Typography>
             </Button>
-            <Link to="/karzina">
+            <Link  to="/karzina">
               <Button sx={{ padding: "10px" }} variant="#000">
                 {" "}
                 <i
@@ -165,7 +165,7 @@ export default class Navbar extends Component {
                   class="bx bx-shopping-bag"
                 ></i>
                 <Typography sx={{ fontWeight: "600", fontSize: "15px" }}>
-                  {" "}
+                  {" "} 
                   Корзина
                 </Typography>
               </Button>
