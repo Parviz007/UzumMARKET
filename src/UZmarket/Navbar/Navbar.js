@@ -157,13 +157,8 @@ export default class Navbar extends Component {
                 Избранное
               </Typography>
             </Button>
-            <Link  to="/karzina">
-              <Button sx={{ padding: "10px" }} variant="#000">
-                {" "}
-                <i
-                  style={{ padding: "0 10px", fontSize: "25px" }}
-                  class="bx bx-shopping-bag"
-                ></i>
+            <Link  to="/cart">
+              <Button sx={{ padding: "10px" }} variant="#000"><i style={{ padding: "0 10px", fontSize: "25px" }}class="bx bx-shopping-bag"></i>
                 <Typography sx={{ fontWeight: "600", fontSize: "15px" }}>
                   {" "} 
                   Корзина

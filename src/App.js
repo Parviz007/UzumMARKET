@@ -1,23 +1,20 @@
 import "./App.css";
 import { Box } from "@mui/material";
-import React, { Component } from "react";
+import React from "react";
 import Navbar from "./UZmarket/Navbar/Navbar";
-import { UzumMarket } from "./UzumMarket";
-// import ImgSw from "./UZmarket/Slayper/fooo.webp"
 import foto1 from "./UZmarket/Slayper/uzumFoto.jpg";
 import foto2 from "./UZmarket/Slayper/uzumFoto2.jpg";
 import foto3 from "./UZmarket/Slayper/uzumFoto3.jpg";
 import foto4 from "./UZmarket/Slayper/foto .jpg";
 import foto5 from "./UZmarket/Slayper/foto2.jpg";
-import fotoproduct from "./UZmarket/poject_Item/foto_Tide.jpg";
+import { UzumMarket } from './UzumMarket';
 import fotoVintelator from "./UZmarket/poject_Item/vintelator.jpg";
 import fotorugan from "./UZmarket/poject_Item/rugan.jpg";
 import fotodeg from "./UZmarket/poject_Item/deg.jpg";
 import fotord from "./UZmarket/poject_Item/ord.jpg";
 import fotolosk from "./UZmarket/poject_Item/losk.jpg";
-import NarvarButon from "./UZmarket/NavbarButon/NarvarButon";
 import { Route, Routes } from "react-router-dom";
-import Karzina from "./UZmarket/Karzina/Karzina";
+import  { Cart } from "./UZmarket/Karzina/Karzina";
 
 function App() {
   function Swiper(Id, SwImg) {
@@ -354,20 +351,10 @@ function App() {
       <Box>
         <Navbar />
       </Box>
-
-      {/* <UzumMarket SSwipe={SSwipe} Product={Product} /> */}
-
       <Routes>
-        <Route
-          path="/"
-          element={<UzumMarket SSwipe={SSwipe} Product={Product} />}
-        />
-        <Route path="/karzina" element={<Karzina />} />
+        <Route path='/cart' element={<Cart />}/>
+        <Route path='/' element={<UzumMarket SSwipe={SSwipe} Product={Product}/>} /> 
       </Routes>
-
-      <Box>
-        <NarvarButon />
-      </Box>
     </Box>
   );
 }

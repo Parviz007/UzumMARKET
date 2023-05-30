@@ -4,7 +4,7 @@ import instogram from "./i.webp";
 import telegram from "./telegram.webp";
 import youtube from "./youtube.webp";
 import facbook from "./i (1).webp";
-export default function NarvarButon() {
+export default function Footer() {
   return (
     <Box
       sx={{

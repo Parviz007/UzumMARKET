@@ -1,7 +1,13 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 export default function Project({ Product }) {
+  let navigate = useNavigate();
+
+  let itemProduct = (item) => {
+    navigate("/components/" + item.Id);
+  };
+  console.log(itemProduct);
   let itemLocal = (item) => {
     if (localStorage.getItem("korzinaProduct")) {
       let a = JSON.parse(localStorage.getItem("korzinaProduct"));
@@ -34,7 +40,7 @@ export default function Project({ Product }) {
             gap: "25px",
             justifyContent: "center",
             overflow: "hidden",
-        
+
             flexWrap: "wrap",
           }}
         >
@@ -163,9 +169,8 @@ export default function Project({ Product }) {
               border: "solid 0px",
               borderRadius: "10px",
               margin: "50px 0",
-              fontSize:"20px",
-              fontWeight:"6500",
-              
+              fontSize: "20px",
+              fontWeight: "6500",
             }}
           >
             Паказат ещё 20
