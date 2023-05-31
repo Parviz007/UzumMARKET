@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 export default function Project({ Product }) {
@@ -7,7 +8,7 @@ export default function Project({ Product }) {
   let itemProduct = (item) => {
     navigate("/components/" + item.Id);
   };
-  console.log(itemProduct);
+
   let itemLocal = (item) => {
     if (localStorage.getItem("korzinaProduct")) {
       let a = JSON.parse(localStorage.getItem("korzinaProduct"));
@@ -20,6 +21,7 @@ export default function Project({ Product }) {
       localStorage.setItem("korzinaProduct", JSON.stringify(b));
     }
   };
+
   return (
     <Box width={"90%"} margin={"0 auto"} sx={{ animation: "5s 0s " }}>
       <Box>
@@ -46,6 +48,7 @@ export default function Project({ Product }) {
         >
           {Product.map((item, index) => (
             <Box
+              onClick={itemProduct(item)}
               key={index}
               sx={[
                 {
@@ -147,7 +150,7 @@ export default function Project({ Product }) {
                     sx={{ position: "absolute", bottom: "25px", right: "15px" }}
                   >
                     <i
-                      onClick={itemLocal(item)}
+                      onClick={() => itemLocal(item)}
                       style={{
                         fontSize: "25px",
                         fontWeight: "100",
